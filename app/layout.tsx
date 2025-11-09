@@ -3,6 +3,7 @@ import { Inter, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 import Navigation from "./components/Navigation";
 import { ThemeProvider } from "./providers/theme-provider";
+import { Analytics } from "@vercel/analytics/next"
 
 const inter = Inter({
   variable: "--font-inter",
@@ -37,6 +38,7 @@ export default function RootLayout({
             {children}
           </main>
         </ThemeProvider>
+        <Analytics />
       </body>
     </html>
   );
