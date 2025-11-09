@@ -4,6 +4,7 @@ import "./globals.css";
 import Navigation from "./components/Navigation";
 import { ThemeProvider } from "./providers/theme-provider";
 import { Analytics } from "@vercel/analytics/next"
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 const inter = Inter({
   variable: "--font-inter",
@@ -39,6 +40,7 @@ export default function RootLayout({
           </main>
         </ThemeProvider>
         <Analytics />
+        <SpeedInsights />
       </body>
     </html>
   );
